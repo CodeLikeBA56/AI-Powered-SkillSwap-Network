@@ -1,0 +1,81 @@
+.achievements-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+}
+
+.achievements-container .main-achievements {
+    gap: 20px;
+    display: grid;
+    margin-top: 15px;
+    grid-template-columns: repeat(3, 300px);
+}
+
+.achievements-container .main-achievements .achievement-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: max-content;
+    border-radius: 8px;
+    background: var(--message-bg);
+    border: 1px solid var(--shadow-color);
+}
+
+.achievements-container .main-achievements .achievement-card:hover {
+    animation: shake 0.4s ease-in-out;
+}
+  
+@keyframes shake {
+    0%   { transform: translateX(0); }
+    25%  { transform: translateX(-5px); }
+    50%  { transform: translateX(5px); }
+    75%  { transform: translateX(-3px); }
+    100% { transform: translateX(0); }
+}
+  
+
+.achievement-card .achievement-header {
+    height: 50px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--main-color);
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--shadow-color);
+}
+
+.achievement-card .completed-levels {
+    gap: 5px;
+    display: flex;
+    align-items: center;
+    padding: 10px 0 0px;
+    justify-content: center;
+}
+
+.achievement-card .total-levels {
+    padding: 1px;
+    text-align: center;
+}
+
+.achievement-card .completed-levels span {
+    width: 7px;
+    height: 7px;
+    border-radius: 50px;
+}
+
+.achievement-card .todo {
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+.achievement-card .achievement-footer {
+    padding: 10px;
+    margin-top: auto;
+    font-size: 12.5px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--text-color);
+}

@@ -1,0 +1,99 @@
+.alert-container {
+    padding: 10px;
+    min-width: 350px;
+    max-width: max-content;
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    gap: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    border: 2px solid;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    color: var(--notification-primary);
+    border-color: var(--notification-border);
+    background-color: var(--notification-bg);
+    animation: fade-in 3s linear;
+    z-index: 9999;
+}
+
+.notification-content {
+    gap: 8px;
+    width: 100%;
+    display: flex;
+}
+
+.notification--success {
+    --notification-bg: #EBF7EE;
+    --notification-border: #3FBF62;
+    --notification-primary: #3FBF62;
+}
+
+.notification--failure {
+    --notification-bg: #FCEDEA;
+    --notification-border: #EC4E2C;
+    --notification-primary: #EC4E2C;
+}
+
+.notification--warning {
+    --notification-bg: #FEF7EA;
+    --notification-border: #EF9400;
+    --notification-primary: #EF9400;
+}
+
+.notification--info {
+    --notification-bg: #E5EFFA;
+    --notification-border: #016BE1;
+    --notification-primary: #016BE1;
+}
+
+.material-symbols-outlined {
+    font-size: 24px;
+    color: var(--notification-primary);
+}
+
+.notification-content p {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--notification-primary);
+}
+
+.notification-progress {
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: left;
+    border-radius: inherit;
+    animation: progress 2.5s .3s linear;
+    background: linear-gradient(to right, var(--notification-bg), var(--notification-border));
+}
+
+@keyframes progress {
+    to {
+        transform: scaleX(1);
+    }
+}
+
+@keyframes fade-in {
+    5% {
+        opacity: 1;
+        visibility: visible;
+    }
+    95% {
+        opacity: 1;
+    }
+}
+
+/* @media screen and (max-width: 700px) {
+    .alert-container {
+        top: 81.5px;
+        left: 50%;
+        bottom: unset;
+        transform: translateX(-50%);
+    }
+} */

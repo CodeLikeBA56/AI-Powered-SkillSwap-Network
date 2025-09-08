@@ -1,0 +1,80 @@
+.attendee-detail {
+    display: flex;
+    padding: 8px 10px;
+    position: relative;
+    align-items: center;
+    /* border-top: 1px solid var(--shadow-color); */
+}
+
+.attendee-detail:first-child {
+    border-top: none;
+}
+
+.attendee-detail .attendee-profile {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.attendee-detail .attendee-info {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.attendee-detail .attendee-info .username {
+    font-size: 15px;
+}
+
+.attendee-detail .attendee-info .attendee-role {
+    font-size: 12px;
+    margin-top: -3.5px;
+    color: var(--secondary-color);
+}
+
+.attendee-detail .attendee-options {
+    margin-left: auto;
+}
+
+.attendee-detail .attendee-options .attendee-options-popup-btn {
+    width: 25px;
+    height: 25px;
+    background: none;
+    color: var(--text-color);
+}
+  
+.attendee-popup-menu {
+    min-width: 140px;
+    position: absolute;
+    top: 40px;
+    right: 15px;
+    z-index: 1000;
+    border-radius: 6px;
+    background-color: var(--main-color);
+    overflow: hidden;
+}
+  
+.attendee-popup-menu button {
+    display: block;
+    width: 100%;
+    padding: 8px 12px;
+    background: none;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.attendee-popup-menu .kick-attendee-btn {
+    color: rgba(255, 0, 0, 0.872);
+}
+ 
+.attendee-detail .accept-join-req-btn {
+    height: 30px;
+    padding: 0 7px;
+    font-weight: 600;
+    margin-left: auto;
+    border-radius: 6px;
+}

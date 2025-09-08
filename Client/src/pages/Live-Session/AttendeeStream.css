@@ -1,0 +1,54 @@
+.attendee-stream-container {
+    height: max-content;
+    min-height: 285px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--message-bg);
+}
+
+.attendee-stream-container .attendee-profile {
+    width: 100px;
+    height: 100px;
+    margin-top: auto;
+    object-fit: cover;
+    align-self: center;
+    border-radius: 50px;
+    border: 5px solid var(--text-color);
+}
+
+.attendee-stream-container .attendee-video {
+    width: max-content;
+    width: 293px;
+    height: 220px;
+    border-radius: 10px 10px 0 0;
+}
+
+.attendee-stream-container .attendee-stream-and-info {
+    gap: 10px;
+    display: flex;
+    padding: 10px;
+    margin-top: auto;
+    align-items: center;
+}
+
+.attendee-stream-container .attendee-stream-and-info .attendee-avatar {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.attendee-stream-container .attendee-stream-and-info .attendee-name {
+    width: 100%;
+    height: 45px;
+    padding: 0 10px;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+}

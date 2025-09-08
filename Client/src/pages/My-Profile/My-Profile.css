@@ -1,0 +1,70 @@
+@media screen and (min-width: 700px) and (max-width: 800px) {
+    .user-profile-container {
+        width: calc(100vw - 80px);
+        grid-template-columns: calc(100vw - 80px);
+    }
+    
+    .user-profile-container .user-profile-detail {
+        padding: 10px;
+        grid-template-columns: 20vw calc(100vw - 28vw);
+        border: 1px solid red;
+    }
+    
+    .user-profile-container .user-profile-detail .user-detail img {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+    }
+
+    .user-profile-container .user-profile-detail .user-detail h2 {
+        font-size: 3.3vw;
+        font-weight: 600;
+    }
+      
+    .user-profile-container .user-profile-detail .profile-detail {
+        width: calc(100%);
+    }
+    
+    .user-profile-container .user-profile-detail .profile-detail .profile-stats {
+        gap: 0;
+        justify-content: space-between;
+    }
+
+    .user-profile-container .user-profile-detail .profile-detail .profile-stats span {
+        font-size: 13.5px;
+        font-weight: 600;
+    }
+    
+    .profile-detail .user-info {
+        justify-content: space-between;
+    }
+    
+    .profile-detail .button-wrapper {
+        padding-bottom: 3px;
+    }
+
+    .profile-detail .button-wrapper button {
+        width: 100px;
+        height: 35px;
+        font-size: .9rem;
+    }
+
+    .profile-detail .user-info .edit-profile-btn {
+        width: 30px;
+        height: 30px;
+        border-radius: 5px;
+    }
+    
+    
+    .profile-detail .user-info .user-email {
+        font-size: 14px;
+    }
+    
+    .profile-detail p {
+        font-size: 14px;
+    }
+
+    .post-tabs {
+        width: 100%;
+    }
+}

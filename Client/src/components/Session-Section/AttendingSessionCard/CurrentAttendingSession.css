@@ -1,0 +1,82 @@
+.attending-session-card {
+    width: 270px;
+    height: 300px;
+    gap: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    right: -270px;
+    transform: translateY(-50%);
+    border-radius: 10px 0 0 10px;
+    border: 1px solid var(--shadow-color);
+    border-right: none;
+    background-color: var(--bg-color);
+    z-index: 999;
+}
+
+.attending-session-card.show-card {
+    right: 0px;
+}
+
+.attending-session-card header {
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--main-color);
+}
+
+.attending-session-card .redirect-to-session-btn {
+    width: 30px;
+    height: 30px;
+    border-radius: 6px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.attending-session-card .redirect-to-session-btn span {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.attending-session-card .attendee-profile {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--text-color);
+}
+
+.attending-session-card .my-stream {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--text-color);
+}
+
+.attending-session-card .attendee-name {
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.attending-session-card .end-call-btn {
+    margin-top: auto;
+}
+
+.attending-session-card .hide-card-btn {
+    width: 27px;
+    height: 40px;
+    position: absolute;
+    left: -27px;
+    top: 50%;
+    border-radius: 8px 0 0 8px;
+    transform: translateY(-50%);
+}
+
+.attending-session-card .msg {
+    font-size: 12px;
+    color: var(--secondary-color);
+}

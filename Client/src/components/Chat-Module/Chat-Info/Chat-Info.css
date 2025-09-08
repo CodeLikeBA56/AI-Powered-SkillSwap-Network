@@ -1,0 +1,94 @@
+.chat-person-info {
+    height: 0;
+    width: 100%;
+    margin-left: 10;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: var(--bg-color);
+    transition: all 1s;
+    overflow: hidden;
+    padding: 5px 20px 0px;
+}
+
+.chat-person-info.open {
+    padding-bottom: 20px;
+    height: 100vh;
+}
+
+.chat-person-info header {
+    width: 100%;
+    display: flex;
+    padding: 10px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.chat-person-info header button {
+    color: var(--text-color);
+    background: none;
+}
+
+.chat-person-info header .edit-btn {
+    width: 50px;
+    height: 35px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.chat-person-info img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    align-self: center;
+    object-fit: cover;
+    border: 4px solid var(--main-color);
+}
+
+.chat-person-info .nickname-input-container {
+    display: flex;
+    align-items: center;
+}
+
+.chat-person-info .nickname-input-container label {
+    color: var(--white-color);
+    padding: 5px 10px;
+    background: var(--main-color);
+}
+
+.chat-person-info #nickname-field {
+    width: 350px;
+}
+
+.button-groups {
+    margin-top: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.chat-person-info .button-groups .clear-chat-btn, .chat-person-info .button-groups .delete-chat-btn {
+    height: 50px;
+    min-width: 300px;
+    color: red;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    align-self: center;
+    background: none;
+    border: 1.5px solid var(--shadow-color);
+}
+
+.chat-person-info .button-groups .clear-chat-btn:hover, .chat-person-info .button-groups .delete-chat-btn:hover {
+    border-color: var(--text-color);
+}
+
+.chat-person-info .button-groups .clear-chat-btn {
+    margin-top: auto;
+    color: var(--main-color);
+}

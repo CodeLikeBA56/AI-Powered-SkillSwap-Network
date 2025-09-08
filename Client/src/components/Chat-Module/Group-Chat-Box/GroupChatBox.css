@@ -1,0 +1,17 @@
+.group-chat-participants {
+    font-size: 12.5px;
+    font-weight: 500;
+}
+
+.message-by, .replied-to {
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.my-message .message-by {
+    color: var(--white-color);
+}
+
+.recipient-message .message-by {
+    color: var(--main-color);
+}

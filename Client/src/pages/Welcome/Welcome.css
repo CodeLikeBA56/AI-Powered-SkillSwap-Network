@@ -1,0 +1,75 @@
+/* Container */
+.welcome-container {
+    width: 100%;
+    padding: 50px;
+    height: calc(100vh - 100px);
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--bg-color);
+}
+  
+.title-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+  
+.char {
+    font-size: 50px;
+    white-space: pre;
+    font-weight: bold;
+    display: inline-block;
+    color: var(--main-color);
+}
+  
+.quote {
+    font-size: 22px;
+    font-style: italic;
+    color: var(--text-color);
+    margin-bottom: 10px;
+    width: 100%;
+}
+  
+  /* Motivation block */
+.motivation {
+    width: 100%;
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: var(--secondary-color);
+}
+  
+  /* Animation container */
+.animation-row {
+    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    width: 100%;
+}
+  
+.get-started-button {
+    padding: 20px 48px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: auto;
+    font-weight: bold;
+    border-radius: 8px;
+    color: var(--white-color);
+    background-color: var(--main-color);
+}
+  
+.animations {
+    width: 100%;
+    display: flex;
+    margin-top: auto;
+    align-items: center;
+    justify-content: space-between;
+}

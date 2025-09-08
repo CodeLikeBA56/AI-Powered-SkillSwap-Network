@@ -1,0 +1,57 @@
+.achievements-by-category-container {
+    width: 100%;
+    display: flex;
+    overflow-y: auto;
+    max-height: 390px;
+    padding-bottom: 5px;
+    flex-direction: column;
+}
+
+.achievements-by-category-container .achievement-card {
+    padding: 5px 20px 5px 10px;
+    border-bottom: 1px solid var(--shadow-color);
+}
+
+.achievements-by-category-container .achievement-card:last-child {
+    border-bottom: none;
+}
+
+.achievements-by-category-container .achievement-card header {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 1000;
+    color: var(--text-color);
+}
+
+.achievements-by-category-container .achievement-card .achievement-detail {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.achievements-by-category-container .achievement-card .achievement-detail p {
+    font-size: 14px;
+    color: var(--secondary-color);
+}
+
+.achievements-by-category-container .achievement-card .achievement-detail span {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.achievements-by-category-container .achievement-card .achievement-detail .completed-tag {
+    color: var(--main-color);
+}
+
+.achievements-by-category-container .achievement-card .achievement-reward {
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+.achievements-by-category-container .achievement-card .achievement-reward span {
+    font-size: 13px;
+    color: var(--secondary-color);
+}

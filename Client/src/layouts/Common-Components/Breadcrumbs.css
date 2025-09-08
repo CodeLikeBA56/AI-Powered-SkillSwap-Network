@@ -1,0 +1,37 @@
+.breadcrumbs {
+    gap: 5px;
+    height: 60px;
+    display: flex;
+    font-size: 1.1rem;
+    align-items: center;
+    padding: 0 20px;
+    border-bottom: 1px solid var(--shadow-color);
+}
+
+.breadcrumbs .breadcrumb {
+    gap: 5px;
+    display: flex;
+}
+
+.breadcrumbs .breadcrumb a {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+.breadcrumbs .breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.inactive-breadcrumb {
+    color: gray;
+    cursor: default;
+    pointer-events: none;
+}
+
+@media screen and (max-width: 700px) {
+    .breadcrumbs {
+        border: none;
+        height: 50px;
+        font-size: 1.05rem;
+    }
+}

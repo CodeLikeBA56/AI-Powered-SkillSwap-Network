@@ -1,0 +1,72 @@
+.social-media-links {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.social-media-links .description {
+    font-size: .9rem;
+    font-weight: 500;
+    color: var(--secondary-color);
+}
+
+.social-media-links .social-media-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-media-container {
+    gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+  
+.social-media-container .input-group {
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+}
+  
+.icon {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white-color);
+    background-color: var(--main-color);
+    border-radius: 4px 0 0 4px;
+}
+  
+.social-media-container .input-group input[type="text"] {
+    flex: 1;
+    height: 35px;
+    max-width: 300px;
+    padding: 0 10px;
+    font-size: .9rem;
+    color: var(--text-color);
+    border: 1px solid var(--shadow-color);
+    border-left: none;
+    border-radius: 0 4px 4px 0;
+    outline: none;
+}  
+
+.social-media-container .input-group input[type="text"]:focus {
+    border-color: var(--main-color);
+}
+
+.social-media-container .input-group input[type="text"]:not(:placeholder-shown) {
+    border-color: var(--main-color);
+}
+
+
+@media screen and (max-width: 500px) {
+    .social-media-links .description {
+        font-size: .85rem;
+    }
+    .social-media-container {
+        grid-template-columns: 1fr;
+    }
+
+
+}

@@ -1,0 +1,46 @@
+.post-share-section {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    padding: 15px 0px;
+    flex-direction: column;
+}
+
+.post-share-section .searchbar {
+    height: 40px;
+    padding: 0 15px;
+    align-self: center;
+    border-radius: 50px;
+    border: 1px solid var(--shadow-color);
+}
+
+.post-share-section .searchbar:focus {
+    border-color: var(--text-color);
+}
+
+.post-share-section .user-list {
+    margin-top: 15px;
+    padding: 20px 20px 0;
+    border-top: .5px solid var(--shadow-color);
+    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.post-share-section .share-post-input {
+    height: 50px;
+    display: flex;
+    color: var(--text-color);
+    align-items: center;
+    margin-top: auto;
+    padding: 0 30px;
+    border-top: 1px solid var(--shadow-color);
+}
+
+.post-share-section .share-post-btn {
+    height: 40px;
+    margin: 0 30px 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+}

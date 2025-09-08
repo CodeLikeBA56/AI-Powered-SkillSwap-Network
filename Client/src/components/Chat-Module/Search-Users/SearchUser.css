@@ -1,0 +1,153 @@
+.search-user-container {
+    display: flex;
+    flex-direction: column;
+    max-height: 430px;
+    width: 100%;
+}
+
+.search-user-container header {
+    min-height: 40px;
+    max-height: 100px;
+    overflow-y: scroll;
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 15px;
+    border-bottom: .3px solid var(--shadow-color);
+}
+
+.search-user-container header .to-heading{
+    font-weight: 600;
+}
+
+.search-user-container header .user-tag {
+    gap: 14px;
+    display: flex;
+    align-items: center;
+    padding: 2px 8px 2px 8px;
+    border-radius: 50px;
+    background: var(--main-color);
+}
+
+.search-user-container header .user-tag .user-name {
+    color: var(--white-color);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.search-user-container header .user-tag .delete-user-btn {
+    margin: 0;
+    width: 12px;
+    height: 12px;
+    background: none;
+}
+
+.search-user-container header .user-tag .delete-user-btn .delete-user-btn-icon {
+    color: var(--white-color);
+    font-weight: 600;
+    font-size: 18px;
+}
+
+#search-user-by-name {
+    font-size: 16px;
+    color: var(--text-color);
+    flex: 1;
+}
+
+.search-user-container .recommended-users {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    margin: 10px 0;
+    max-height: 250px;
+    overflow-y: scroll;
+    scroll-behavior: thin;
+}
+
+.search-user-container .recommended-users h4 {
+    padding: 0 15px;
+}
+
+.search-user-container .recommended-users .no-user-match {
+    padding: 10px 0;
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+.search-user-container .recommended-users .users-list {
+    display: flex;
+    max-height: 200px;
+    overflow-y: scroll;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+.search-user-container .recommended-users .users-list .user-option {
+    padding: 7px 25px 7px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all .4s ease;
+}
+
+.search-user-container .recommended-users .users-list .user-option:hover {
+    background-color: var(--shadow-color);
+}
+
+.user-option input[type="checkbox"] + label {
+    cursor: pointer;
+    position: relative;
+    pointer-events: none;
+}
+
+.user-option input[type="checkbox"] + label::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -25px;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    border-radius: 3px;
+    border: 2px solid var(--shadow-color);
+}
+
+.user-option input[type="checkbox"]:checked + label::before {
+    border: 2px solid var(--main-color);
+}
+
+.user-option input[type="checkbox"]:checked + label::after {
+    content: "";
+    position: absolute;
+    top: -3.5px;
+    left: -20px;
+    transform: rotate(-45deg) scale(1);
+    opacity: 1;
+    width: 14px;
+    height: 5.5px;
+    border-left: 2.2px solid var(--main-color);
+    border-bottom: 2.2px solid var(--main-color);
+    transition: all .2s ease;
+}
+
+.user-option input[type="checkbox"]:not(:checked) + label::after {
+    content: "";
+    position: absolute;
+    top: -3.5px;
+    left: -20px;
+    transform: rotate(-45deg) scale(0);
+    width: 14px;
+    height: 5.5px;
+    opacity: 0;
+    border-left: 2.2px solid var(--main-color);
+    border-bottom: 2.2px solid var(--main-color);
+    transition: all .2s ease;
+}
+
+.search-user-container button {
+    height: 45px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 50px;
+    margin: 10px 50px 20px;
+}

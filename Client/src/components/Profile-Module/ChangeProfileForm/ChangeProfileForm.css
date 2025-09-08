@@ -1,0 +1,45 @@
+.change-profile-container {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 10px 20px;
+}
+
+.change-profile-container header {
+    width: 100%;
+    font-weight: 800;
+    font-size: 2rem;
+    text-align: center;
+    color: var(--main-color);
+}
+
+.change-profile-container div {
+    position: relative;
+}
+
+.change-profile-container div img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.change-profile-container div .change-profile-btn {
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    font-weight: 800;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 10px;
+    right: -10px;
+}
+
+.change-profile-container button {
+    width: 70%;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 800;
+    border-radius: 50px;
+}

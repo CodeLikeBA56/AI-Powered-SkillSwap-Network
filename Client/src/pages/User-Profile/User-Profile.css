@@ -1,0 +1,353 @@
+.user-profile-container {
+    display: grid;
+    overflow: hidden;
+    overflow-y: scroll;
+    justify-items: center;
+    grid-template-columns: calc(100vw - 280px);
+}
+
+.user-profile-container .user-profile-detail {
+    width: 100%;
+    display: grid;
+    height: max-content;
+    grid-template-columns: 300px calc(100vw - 300px - 280px);
+    border-bottom: 1px solid var(--shadow-color);
+}
+
+.user-profile-container .user-profile-detail .user-detail {
+    gap: 10px;
+    display: flex;
+    padding: 10px 0;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.user-profile-container .user-profile-detail .user-detail img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.user-profile-container .user-profile-detail .user-detail h2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.user-profile-container .user-profile-detail .profile-detail {
+    display: flex;
+    width: max-content;
+    flex-direction: column;
+}
+  
+.user-profile-container .user-profile-detail .profile-detail .profile-stats {
+    gap: 100px;
+    display: flex;
+    padding: 15px 0;
+}
+
+.user-profile-container .user-profile-detail .profile-detail .profile-stats button {
+    font-size: 1.1rem;
+    font-weight: 600;
+    background: none;
+    color: var(--text-color);
+}
+
+.profile-detail .user-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-detail .button-wrapper {
+    margin-top: auto;
+    gap: 15px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+.profile-detail .button-wrapper button {
+    height: 40px;
+    width: 120px;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.profile-detail .user-info .edit-profile-btn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    cursor: pointer;
+    border-radius: 7px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.profile-detail .user-info .user-email {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.profile-detail p {
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.post-tabs {
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    height: max-content;
+    border-bottom: 1px solid var(--shadow-color);
+    justify-content: center;
+    width: calc(100vw - 280px);
+}
+
+.post-tabs .link {
+    gap: 7px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    color: var(--text-color);
+}
+
+.post-tabs .link.active {
+    /* transition: all .2s; */
+    color: var(--main-color);
+}
+
+.post-tabs .link .link-name {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.post-tabs .link.active .link-name {
+    color: var(--main-color);
+}
+
+@media screen and (min-width: 801px) and (max-width: 1200px) {
+    .user-profile-container {
+        width: calc(100vw - var(--sidebar-width));
+        grid-template-columns: calc(100vw - var(--sidebar-width));
+    }
+    
+    .user-profile-container .user-profile-detail {
+        padding: 10px;
+        grid-template-columns: calc(30vw - var(--sidebar-width)) calc(100vw - 30vw - var(--sidebar-width));
+    }
+    
+    .user-profile-container .user-profile-detail .user-detail img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+
+    .user-profile-container .user-profile-detail .user-detail h2 {
+        font-size: 1.4rem;
+    }
+      
+    .user-profile-container .user-profile-detail .profile-detail {
+        width: calc(100vw - 32vw - 100px);
+    }
+    
+    .user-profile-container .user-profile-detail .profile-detail .profile-stats {
+        gap: 0;
+        justify-content: space-between;
+    }
+
+    .user-profile-container .user-profile-detail .profile-detail .profile-stats button {
+        font-size: 1.1rem;
+    }
+    
+    .profile-detail .user-info {
+        justify-content: space-between;
+    }
+    
+    .profile-detail .button-wrapper {
+        padding-bottom: 5px;
+    }
+
+    .profile-detail .button-wrapper button {
+        width: 120px;
+        height: 39px;
+        font-size: 1rem;
+    }
+
+    .profile-detail .user-info .edit-profile-btn {
+        width: 30px;
+        height: 30px;
+        border-radius: 5px;
+    }
+    
+    
+    .profile-detail .user-info .user-email {
+        font-size: 14px;
+    }
+    
+    .profile-detail .user-bio {
+        font-size: 15px;
+    }
+
+    .post-tabs {
+        width: 100%;
+    }
+
+    .post-section {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 701px) and (max-width: 800px) {
+    .user-profile-container {
+        width: calc(100vw - 80px);
+        grid-template-columns: calc(100vw - 80px);
+    }
+    
+    .user-profile-container .user-profile-detail {
+        padding: 10px;
+        grid-template-columns: 32vw calc(100vw - 32vw - 20px);
+    }
+    
+    .user-profile-container .user-profile-detail .user-detail img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+
+    .user-profile-container .user-profile-detail .user-detail h2 {
+        font-size: 1.4rem;
+    }
+      
+    .user-profile-container .user-profile-detail .profile-detail {
+        width: calc(100vw - 32vw - 100px);
+    }
+    
+    .user-profile-container .user-profile-detail .profile-detail .profile-stats {
+        gap: 0;
+        justify-content: space-between;
+    }
+
+    .user-profile-container .user-profile-detail .profile-detail .profile-stats button {
+        font-size: 1.1rem;
+    }
+    
+    .profile-detail .user-info {
+        justify-content: space-between;
+    }
+    
+    .profile-detail .button-wrapper {
+        padding-bottom: 5px;
+    }
+
+    .profile-detail .button-wrapper button {
+        width: 120px;
+        height: 39px;
+        font-size: 1rem;
+    }
+
+    .profile-detail .user-info .edit-profile-btn {
+        width: 30px;
+        height: 30px;
+        border-radius: 5px;
+    }
+    
+    
+    .profile-detail .user-info .user-email {
+        font-size: 14px;
+    }
+    
+    .profile-detail .user-bio {
+        font-size: 15px;
+    }
+
+    .post-tabs {
+        width: 100%;
+    }
+
+    .post-section {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .user-profile-container {
+        grid-template-columns: 100vw;
+    }
+    
+    .user-profile-container .user-profile-detail {
+        padding: 10px;
+        padding-left: 0;
+        grid-template-columns: 38vw calc(100vw - 38vw - 10px);
+    }
+    
+    .user-profile-container .user-profile-detail .user-detail img {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+    }
+
+    .user-profile-container .user-profile-detail .user-detail h2 {
+        font-size: 3.3vw;
+    }
+      
+    .user-profile-container .user-profile-detail .profile-detail {
+        width: calc(100%);
+    }
+    
+    .user-profile-container .user-profile-detail .profile-detail .profile-stats {
+        gap: 0;
+        justify-content: space-between;
+    }
+
+    .user-profile-container .user-profile-detail .profile-detail .profile-stats button {
+        font-size: 13.5px;
+    }
+    
+    .profile-detail .user-info {
+        justify-content: space-between;
+    }
+    
+    .profile-detail .button-wrapper {
+        padding-bottom: 3px;
+    }
+
+    .profile-detail .button-wrapper button {
+        width: 100px;
+        height: 35px;
+        font-size: .9rem;
+    }
+
+    .profile-detail .user-info .edit-profile-btn {
+        width: 30px;
+        height: 30px;
+        border-radius: 5px;
+    }
+    
+    
+    .profile-detail .user-info .user-email {
+        font-size: 14px;
+    }
+    
+    .profile-detail p {
+        font-size: 14px;
+    }
+
+    .post-tabs {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 550px) and (max-width: 700px) {
+    .user-profile-container .user-profile-detail .profile-detail .profile-stats button {
+        font-size: 1.1rem;
+    }
+}

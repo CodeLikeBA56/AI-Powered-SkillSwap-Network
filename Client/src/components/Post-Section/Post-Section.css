@@ -1,0 +1,20 @@
+.post-container {
+    width: 600px;
+    overflow-y: scroll;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.no-posts-message {
+    color: var(--secondary-color);
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .post-container {
+        width: 100vw;
+    }
+}

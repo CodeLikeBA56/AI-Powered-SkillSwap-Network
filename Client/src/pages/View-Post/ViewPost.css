@@ -1,0 +1,7 @@
+.post-adjustment {
+    width: 550px;
+    justify-self: center;
+    border-radius: 0 0 20px 20px;
+    border: 1px solid var(--shadow-color);
+    border-top: none;
+}

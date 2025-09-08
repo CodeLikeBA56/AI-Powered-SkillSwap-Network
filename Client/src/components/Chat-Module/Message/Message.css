@@ -1,0 +1,141 @@
+.message-date {
+    margin: 10px 0;
+    width: 100px;
+    height: 25px;
+    font-size: 13px;
+    place-self: center;
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white-color);
+    background-color: #333;
+    border-radius: 50px;
+    position: sticky;
+    z-index: 1;
+    top: 0px;
+}
+
+.my-message, .recipient-message {
+    max-width: 60%;
+    min-width: 250px;
+    padding: 10px;
+    height: max-content;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.my-message .reply-to-header, .recipient-message .reply-to-header {
+    padding: 5px 7px;
+    margin-bottom: 5px;
+    background: var(--shadow-color);
+    border-radius: 5px;
+    border-left: 4px solid var(--white-color);
+}
+
+.my-message .reply-to-header {
+    border-left: 4px solid var(--white-color);
+}
+
+.recipient-message .reply-to-header {
+    border-left: 4px solid var(--main-color);
+}
+
+.my-message .reply-to-header .replied-to, .recipient-message .reply-to-header .replied-to {
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.my-message .reply-to-header .replied-to {
+    color: var(--white-color);
+}
+
+.recipient-message .reply-to-header .replied-to {
+    color: var(--main-color);
+}
+
+.my-message.delete, .recipient-message.delete {
+    height: 0;
+    transition: height 0.5s ease;
+}
+
+.my-message.reverse, .recipient-message.reverse {
+    height: max-content;
+    transition: height 0.5s ease;
+}
+
+.chat-messages .my-message {
+    place-self: flex-end;
+    background: var(--main-color);
+}
+
+.chat-messages .recipient-message {
+    place-self: flex-start;
+    color: var(--text-color);
+    background: var(--message-bg);
+}
+
+.chat-messages .my-message-content {
+    color: var(--white-color);
+}
+
+.chat-messages .recipient-message-content {
+    color: var(--text-color);
+}
+
+.message-footer {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.message-footer .my-message-time, .recipient-message-time {
+    width: max-content;
+    align-self: flex-end;
+    font-size: 13px;
+}
+
+.message-footer .recipient-message-time {
+    color: var(--secondary-color);
+}
+
+.message-footer .my-message-time {
+    color: var(--white-color);
+}
+
+.message-footer .message-result {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.event-message {
+    width: max-content;
+    padding: 2px 20px;
+    border-radius: 50px;
+    gap: 4px;
+    display: flex;
+    align-items: center;
+    place-self: center;
+    background-color: #333;
+}
+
+.event-message button {
+    background: none;
+    font-size: 14.5px;
+    color: var(--white-color);
+}
+
+.event-message button:hover {
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
+.event-message span {
+    background: none;
+    font-size: 14.5px;
+    color: var(--white-color);
+}
+  

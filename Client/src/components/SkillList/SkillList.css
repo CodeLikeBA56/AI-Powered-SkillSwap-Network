@@ -1,0 +1,48 @@
+.heading {
+    width: 100%;
+    margin: 0 0 10px;
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.skills-set {
+    gap: 10px;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    list-style: none;
+    overflow-x: scroll;
+    padding-bottom: 10px;
+}
+
+.skills-set li {
+    height: 25px;
+    padding: 0 7px;
+    gap: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    background: var(--main-color);
+}
+
+.skills-set li span {
+    width: max-content;
+    color: var(--white-color);
+}
+
+.skills-set li button {
+    display: flex;
+    background: none;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills-set li button:hover {
+    background: red;
+}
+
+.skills-set li button span {
+    font-size: 18px;
+}

@@ -1,0 +1,215 @@
+.profile-section {
+    display: flex;
+    height: max-content;
+    flex-direction: column;
+    width: calc(100vw - 280px);
+}
+
+.profile-info {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 22vw 57vw;
+    border-bottom: 1px solid var(--shadow-color);
+}
+
+.profile-info-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px 20px;
+    border-right: 1px solid var(--shadow-color);
+}
+
+.profile-info-container .heading {
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+.profile-info .achievement-container {
+    display: flex;
+}
+
+.profile-info .achievement-container .achievement-btn {
+    width: 250px;
+    margin: auto;
+    height: 80px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: monospace;
+    border-radius: 10px;
+    box-shadow: 0px 0px 0px 2px var(--text-color);
+}
+
+.social-links {
+    gap: 15px;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+
+.social-links a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--white-color);
+    background-color: var(--main-color);
+}
+  
+.user-certficates .badges {
+    gap: 20px;
+    height: max-content;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(auto-fit, 180px);
+    overflow-x: scroll;
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+}
+  
+.badges article {
+    width: 180px;
+    height: 180px;
+    display: flex;
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 0.8rem;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--shadow-color);
+}
+
+.user-certficates {
+    gap: 15px;
+    display: flex;
+    padding: 10px 20px 0;
+    flex-direction: column;
+}
+
+.profile-section footer {
+    display: flex;
+    align-items: center;
+    padding: 0 20px 20px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profile-section footer div {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.profile-section footer div span, .profile-section footer p {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.profile-section footer div span {
+    color: var(--secondary-color);
+}
+
+.profile-section footer p {
+    color: var(--text-color);
+}
+
+
+
+@media (min-width: 1400px) {
+    .profile-section {
+        grid-template-columns: calc(100vw - 280px);
+    }
+
+    .profile-info {
+        display: grid;
+        grid-template-columns: 350px calc(100% - 350px);
+    }    
+}
+
+@media (min-width: 1050px) and (max-width: 1399px) {
+    .profile-section {
+        grid-template-columns: calc(100vw - var(--sidebar-width));
+    }
+
+    .profile-info {
+        display: grid;
+        grid-template-columns: 350px calc(100% - 350px);
+    }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1049px) {
+    .profile-section {
+        grid-template-columns: calc(100vw - var(--sidebar-width));
+    }
+    
+    .profile-info {
+        display: grid;
+        grid-template-columns: calc(100%);
+    }
+    
+    .profile-image-container {
+        border: none;
+    }
+    
+    main footer {
+        width: 100%;
+        padding: 0 20px 25px;
+    }
+}
+
+@media screen and (min-width: 701px) and (max-width: 800px) {
+    .profile-section {
+        width: 100%;
+        grid-template-columns: calc(100vw - 80px);
+    }
+
+    .profile-info {
+        display: grid;
+        grid-template-columns: calc(100%);
+    }
+    
+    .profile-info-container {
+        border: none;
+    }
+
+    .profile-section footer div {
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .profile-section {
+        width: 100vw;
+    }
+
+    .profile-info {
+        display: grid;
+        grid-template-columns: 100vw;
+    }
+
+    .profile-info-container {
+        border: none;
+        padding: 10px;
+    }
+
+    .profile-section footer div {
+        justify-content: space-between;
+    }
+
+    .profile-section footer div span {
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    .profile-section footer p {
+        margin-top: 6px;
+        font-size: 13px;
+        font-weight: 800;
+    }
+}

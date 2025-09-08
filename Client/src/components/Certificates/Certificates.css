@@ -1,0 +1,79 @@
+.certificates {
+    gap: 20px;
+    min-height: 30px;
+    position: relative;
+    height: max-content;
+    padding-bottom: 20px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(auto-fit, 200px);
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+}
+
+.certificate-item {
+    width: 200px;
+    position: relative;
+    align-self: flex-start;
+}
+
+.certificate-item .certificate-preview {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.certificate-item .pdf-preview {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.certificate-item .delete-cert-btn {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background: var(--main-color);
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+}
+
+.certificate-item .delete-cert-btn span {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--white-color);
+}
+
+.no-certificates {
+    width: max-content;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--secondary-color);
+}
+
+.attach-file-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 45px;
+    border-radius: 50px;
+    cursor: pointer;
+    background: var(--main-color);
+}
+
+@media screen and (max-width: 500px) {
+    .certificates {
+        gap: 10px;
+        padding-bottom: 10px;
+    }
+
+    .attach-file-btn {
+        width: 45px;
+    }
+}

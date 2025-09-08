@@ -1,0 +1,39 @@
+.form-header {
+    display: none;
+}
+
+@media screen and (max-width: 580px) {
+    .form-container .form-header {
+      width: 100%;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 2px solid var(--shadow-color);
+    }
+  
+    .form-container .form-header .form-title {
+      display: initial;
+      font-size: 1.1rem;
+    }
+  
+    .form-header .modal-close-btn {
+      width: 45px;
+      height: 40px;
+      background: none;
+      border-radius: 0;
+      color: var(--text-color);
+    }
+  
+    .form-header .modal-close-btn span {
+      font-size: 26px;
+      background: none;
+    }
+  
+    .form-header button {
+      padding: 10px;
+      font-size: .9rem;
+      font-weight: 600;
+      border-radius: 5px;
+    }
+}

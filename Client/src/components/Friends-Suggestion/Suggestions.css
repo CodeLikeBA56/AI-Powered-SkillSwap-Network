@@ -1,0 +1,81 @@
+.friends-suggestion-container {
+    width: 100%;
+    height: max-content;
+    max-height: 270px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.suggestion-title {
+    font-size: 18px;
+    text-align: left;
+    margin-bottom: 5px;
+    color: var(--main-color);
+}
+
+.friends-suggestion-list {
+    display: flex;
+    list-style: none;
+    overflow: hidden;
+    overflow-y: scroll;
+    padding-right: 10px;
+    scrollbar-width: thin;
+    flex-direction: column;
+    scroll-behavior: smooth;
+}
+
+.friend-suggestion {
+    padding: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.suggested-friend-detail {
+    gap: 10px;
+    display: flex;
+}
+
+.suggested-person-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.profile-picture {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.username {
+    color: var(--text-color);
+    font-size: 14.5px;
+    font-weight: bold;
+}
+
+.message {
+    color: var(--secondary-color);
+    font-size: 11px;
+    font-weight: 500;
+    margin-top: -2px;
+}
+
+.follow-btn {
+    height: 25px;
+    padding: 3px 10px;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.follow-btn.unfollow {
+    background: var(--secondary-color);
+}

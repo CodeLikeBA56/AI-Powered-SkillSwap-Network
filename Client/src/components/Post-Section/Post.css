@@ -1,0 +1,200 @@
+.post {
+    min-width: 300px;
+    width: 100%;
+    overflow: hidden;
+    height: max-content;
+    padding: 16px 12px;
+    position: relative;
+    border-top: 1px solid var(--shadow-color);
+}
+
+.post:first-child {
+    border-top: none;
+}
+
+.post-header {
+    gap: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.post-header .profile-picture {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.post .username {
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.post-date {
+    margin: 0;
+    color: var(--secondary-color);
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.post-action-btn {
+    color: var(--text-color);
+    background: none;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.post-content {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    color: var(--text-color);
+    white-space: pre-wrap;      
+    margin-bottom: 12px;
+}
+
+.post-media {
+    width: 100%;
+    gap: 10px;
+    display: flex;
+    overflow-y: scroll;
+    justify-content: space-between;
+}
+
+.post-image, .post-video {
+    max-height: 220px;
+    border-radius: 0px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.post-footer {
+    gap: 20px;
+    padding: 0 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.post-actions {
+    flex: 1;
+    gap: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.post-interaction-btn {
+    height: 30px;
+    width: max-content;
+    gap: 6px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background: none;
+    color: var(--text-color);
+}
+
+.post-interaction-btn .interaction-btn-count {
+    font-size: 12.3px;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+.post-hashtags {
+    gap: 10px;
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: flex-start;
+    grid-template-columns: repeat(auto-fit, 1fr);
+    overflow-x: scroll;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    
+}
+
+.post-hashtags .hashtag {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--main-color);
+    /* color: #007BFF; */
+}
+
+.post .options-backdrop {
+    width: 100%;
+    z-index: 10;
+    height: 100%;
+    padding: 0 13px;
+    padding-top: 7vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    background: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.pop-up-options {
+    border-radius: 8px 0px 8px 8px;
+    padding: 5px 10px;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background: var(--main-color);
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+}
+
+.pop-up-options::before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    z-index: 999;
+    position: absolute;
+    right: 3px;
+    top: -7px;
+    transform: rotate(45deg);
+    background: var(--main-color);
+}
+
+
+.pop-up-options button {
+    padding: 3px 0;
+    gap: 40px;
+    background: none;
+    justify-content: space-between;
+}
+  
+.pop-up-options .delete-chat-btn span {
+    color: rgba(255, 0, 0, 0.872);
+}
+
+.pop-up-options button .btn-text {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.pop-up-options button .btn-icon {
+    font-size: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .post {
+        padding: 10px;
+    }
+
+    .post-content p {
+        font-size: 15px;
+    }
+    
+    .post-image, .post-video {
+        height: 180px;
+    }
+}

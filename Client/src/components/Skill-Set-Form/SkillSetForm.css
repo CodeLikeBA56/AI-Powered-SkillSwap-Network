@@ -1,0 +1,143 @@
+.skillset-modal {
+    width: 100vw;
+    height: 100vh;
+    padding: 20px 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    -webkit-backdrop-filter: blur(2.5px);
+    backdrop-filter: blur(2.5px);
+}
+
+.skillset-modal .initial-user-info {
+    padding: 10px;
+    width: 420px;
+    height: max-content;
+    overflow-y: scroll;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.skillset-modal form .submit-btn {
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    justify-content: center;
+    color: var(--white-color);
+    background: var(--main-color);
+}
+
+.skillset-modal form .profile-section {
+    width: max-content;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.skillset-modal form .profile-section .user-profile {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.skillset-modal form .user-name {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.profile-section .profile-upload-btn {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 45px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    border-radius: 50%;
+    color: var(--white-color);
+    background: var(--main-color);
+}
+
+.skillset-modal .initial-user-info .input-box{
+    margin: 10px 0 0;
+    width: 100%;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.skillset-modal .initial-user-info .input-box input{
+    width: 80%;
+    height: 45px;
+    background: transparent;
+    border: 2px solid var(--border-color);
+    outline: none;
+    border-radius: 40px;
+    font-size: 1em;
+    color: var(--text-color);
+    padding: 0 20px;
+    transition: 0.5s;
+}
+
+.skillset-modal .initial-user-info .input-box input:focus, .input-box input:valid{
+    border-color: var(--text-color);
+}
+
+.skillset-modal .initial-user-info .input-box label{
+    position: absolute;
+    top: 49%;
+    left: 20px;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-color);
+    pointer-events: none;
+    transition: 0.5s ease;
+}
+
+.skillset-modal .initial-user-info .input-box input:focus ~ label, .input-box input:valid ~ label{
+    top: 1px;
+    font-size: 0.8em;
+    background-color: var(--bg-color);
+    padding: 0 6px;
+    color: var(--text-color);
+}
+
+.skillset-modal .initial-user-info .input-box button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 700px) {
+    .skillset-modal .initial-user-info {
+        padding: 10px;
+        width: 390px;
+        min-width: 320px;
+        height: max-content;
+        overflow-y: scroll;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,24 @@
+.chat-screen {
+  height: 100vh;
+  display: grid;
+  overflow: hidden;
+  grid-template-columns: 400px 760px;
+}
+
+@media screen and (min-width: 901px) and (max-width: 1440) {
+  .chat-screen {
+    grid-template-columns: 360px calc(100vw - 360px - var(--sidebar-width));
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 900px) {
+  .chat-screen {
+    grid-template-columns: calc(100vw - var(--sidebar-width));
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .chat-screen {
+    grid-template-columns: 100vw;
+  }
+}

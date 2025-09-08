@@ -1,0 +1,130 @@
+.sign-in-container, .sign-up-container, .forgot-password-container{
+    width: 420px;
+    padding: 20px 40px;
+    height: max-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    border: 2px solid var(--text-color);
+    box-shadow: 0 0 1rem .1rem var(--shadow-color);
+}
+
+.sign-in-container {
+    width: 400px;
+}
+
+.sign-up-container {
+    padding-bottom: 0;
+}
+
+.title{
+    font-size: 2em;
+    font-weight: 800;
+    color: var(--text-color);
+    text-align: center;
+}
+
+.input-box{
+    position: relative;
+    margin: 20px 0;
+}
+
+.input-box input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: 2px solid var(--shadow-color);
+    outline: none;
+    border-radius: 40px;
+    font-size: 1em;
+    color: var(--text-color);
+    padding: 0 20px;
+    transition: 0.5s;
+}
+.input-box input:focus, .input-box input:valid{
+    border-color: var(--text-color);
+}
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: var(--text-color);
+    pointer-events: none;
+    transition: 0.5s ease;
+}
+.input-box input:focus ~ label, .input-box input:valid ~ label{
+    top: 1px;
+    font-size: 0.8em;
+    background-color: var(--bg-color);
+    padding: 0 6px;
+    color: var(--text-color);
+}
+
+.forgot-password{
+    margin: -15px 0px 10px;
+    text-align: center;
+}
+
+.forgot-password a{
+    font-size: 0.85em;
+    color: var(--text-color);
+    text-decoration: none;
+}
+.forgot-password a:hover, .signup-link a:hover{
+    text-decoration: underline;
+}
+
+#btn{
+    width: 100%;
+    height: 45px;
+    border-radius: 45px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--white-color);
+    background: var(--main-color);
+}
+
+.show-password-btn {
+    padding: 5px;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    background: none;
+    color: var(--text-color);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup-link{
+    margin: 20px 0 0px;
+    text-align: center;
+}
+.signup-link a{
+    font-size: 1em;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+@media screen and (max-width: 700px) {
+    .sign-in-container, .sign-up-container {
+        padding: 20px;
+        width: 90vw;
+    }
+
+    .sign-up-container {
+        top: 56%;
+        padding-bottom: 0;
+    }
+}

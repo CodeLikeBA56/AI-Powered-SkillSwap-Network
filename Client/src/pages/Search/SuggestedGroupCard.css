@@ -1,0 +1,41 @@
+.suggested-group-card {
+    width: 300px;
+    display: flex;
+    gap: 7px;
+    padding: 10px 10px 10px;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 1px solid var(--shadow-color);
+}
+
+.suggested-group-card img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    border-radius: 50px;
+}
+
+.suggested-group-card .group-name {
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--text-color);
+}
+.suggested-group-card .group-description {
+    color: var(--secondary-color);
+}
+
+.suggested-group-card .join-group-btn {
+    height: 40px;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.suggested-group-card .admin-info {
+    font-size: 13px;
+    font-weight: 600;
+    align-self: flex-start;
+    color: var(--secondary-color);
+}

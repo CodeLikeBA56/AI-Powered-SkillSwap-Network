@@ -1,0 +1,64 @@
+.session-content {
+    gap: 0px;
+    display: flex;
+    flex-direction: column;
+    color: var(--text-color);
+    padding: 0 10px;
+}
+
+.session-content .session-title {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: var(--text-color);
+}
+
+.session-content .session-duration {
+    text-align: right;
+    font-weight: 900;
+    color: var(--main-color);
+}
+
+.session-content .session-note {
+    color: var(--secondary-color);
+}
+
+.session-title-heading {
+    gap: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.session-title-heading .heading-icon{
+    padding-top: 1px;
+    align-self: flex-start;
+}
+
+.session-actions-buttons {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.session-actions-buttons button {
+    height: 40px;
+    margin: 8px 0;
+    padding: 0 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 6px;
+}
+
+.notification-message {
+    margin-bottom: 5px;
+    color: var(--secondary-color);
+}
+
+.close-session-btn span {
+    color: gold;
+}
+
+.open-session-btn span {
+    color: #3FBF62;
+}

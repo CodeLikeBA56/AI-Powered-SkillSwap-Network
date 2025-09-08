@@ -1,0 +1,131 @@
+.chat-options-backdrop {
+    width: 100%;
+    z-index: 10;
+    height: 100%;
+    padding: 0 20px;
+    padding-top: 24vh;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    backdrop-filter: blur(10px);
+    background: var(--shadow-color);
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity .5s ease;
+}
+
+.chat-options-backdrop.showing {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.chat-options-backdrop.closing {
+    animation: fade-out .7s forwards;
+}
+
+.chat.poped-up-chat {
+    border-width: 1.5px;
+    border-color: var(--text-color);
+    transform: scaleY(0);
+    transition: transform 0.5s ease;
+    animation: popup-scale-Y 0.5s forwards;
+}
+
+.chat.poped-up-chat.reverse {
+    animation: popup-scale-Y-reverse 0.5s forwards;
+}
+
+.chat-options {
+    border-radius: 8px;
+    padding: 5px 10px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    background: var(--main-color);
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+    transform: scaleY(0);
+    transition: transform 0.5s ease;
+    animation: popup-scale-X 0.5s forwards;
+}
+
+.chat-options.reverse {
+    animation: popup-scale-X-reverse 0.5s forwards;
+}
+
+.chat-options button {
+    padding: 3px 0;
+    gap: 40px;
+    background: none;
+    justify-content: space-between;
+}
+  
+.chat-options .delete-chat-btn span {
+    color: rgba(255, 0, 0, 0.872);
+}
+
+.chat-options button .btn-text {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.chat-options button .btn-icon {
+    font-size: 20px;
+}
+
+@keyframes popup-scale-X {
+    0% {
+      transform: scaleX(0);
+      opacity: 0;
+    }
+    100% {
+      transform: scaleX(1);
+      opacity: 1;
+    }
+}
+
+@keyframes popup-scale-X-reverse {
+    0% {
+      transform: scaleX(1);
+      opacity: 1;
+    }
+    100% {
+      transform: scaleX(0);
+      opacity: 0;
+    }
+}
+
+@keyframes popup-scale-Y {
+    0% {
+      transform: scaleY(0);
+      opacity: 0;
+    }
+    100% {
+      transform: scaleY(1);
+      opacity: 1;
+    }
+}
+
+@keyframes popup-scale-Y-reverse {
+    0% {
+      transform: scaleY(1);
+      opacity: 1;
+    }
+    100% {
+      transform: scaleY(0);
+      opacity: 0;
+    }
+}
+  
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+  

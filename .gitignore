@@ -1,0 +1,32 @@
+# Node
+node_modules/
+npm-debug.log
+yarn-debug.log*
+yarn-error.log*
+.expo/
+.expo-shared/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+env/
+venv/
+ENV/
+
+# Common
+.env
+.DS_Store
+.idea/
+.vscode/
+*.log
+
+# Firebase service account keys
+*.json
+
+# But keep package.json files
+!package.json
+!client/package.json
+!server/package.json

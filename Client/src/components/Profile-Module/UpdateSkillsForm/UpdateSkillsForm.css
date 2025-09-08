@@ -1,0 +1,89 @@
+.skills-update-form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.skills-update-form-container header {
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.skills-update-form-container .skills-list {
+    margin-top: 7px;
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.skills-update-form-container .skills-list li {
+    gap: 10px;
+    width: max-content;
+    display: flex;
+    padding: 8px 10px;
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+}
+
+.skill-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--white-color);
+}
+
+.skills-update-form-container .skills-list li button {
+    width: 20px;
+    height: 20px;
+    background: none;
+    border-radius: 20px;
+}
+
+.skills-update-form-container .skills-list li button:hover {
+    background-color: var(--white-color);
+}
+
+.skills-update-form-container .skills-list li button span {
+    font-size: 16px;
+    font-weight: 600;
+    background: none;
+    border-radius: 50px;
+    color: var(--white-color);
+}
+
+.skills-update-form-container .skills-list li button:hover span {
+    color: #333;
+    background-color: var(--white-color);
+}
+
+.skills-update-form-container .skills-input {
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 17px;
+    color: var(--text-color);
+    border: 1px solid var(--shadow-color);
+}
+
+.skills-update-form-container .skills-input:focus {
+    border: 1px solid var(--text-color);
+}
+
+.skills-update-form-container .skills-suggestion-list {
+    display: flex;
+    list-style: none;
+    max-height: 100px;
+    padding: 5px 20px 5px 10px;
+    overflow-y: scroll;
+    flex-direction: column;
+    background: var(--shadow-color);
+}
+
+.skills-update-form-container .skills-suggestion-list li {
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

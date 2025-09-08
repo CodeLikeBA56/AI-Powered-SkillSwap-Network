@@ -1,0 +1,54 @@
+.attachment-preview-container {
+    padding: 8px;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-radius: 6px;
+    margin-bottom: 3px;
+    background: var(--shadow-color);
+}
+
+.attachment-preview-container img, .attachment-preview-container video {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.attachment-preview-container .file-detail {
+    gap: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.attachment-preview-container .file-detail .file-icon {
+    width: 37px;
+    height: 40px;
+    display: flex;
+    font-size: 11px;
+    font-weight: 800;
+    position: relative;
+    border-radius: 6px;
+    padding: 0 3px 2px;
+    align-items: flex-end;
+    text-transform: uppercase;
+}
+
+.file-icon::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    border-top: none;
+    border-right: 10px solid var(--shadow-color);
+    border-left: none;
+    border-bottom: none;
+}
+
+.attachment-preview-container .file-detail .file-name {
+    display: flex;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+}
